@@ -1,0 +1,54 @@
+nav.navbar {
+  border-radius: 0;
+  background-color: white;
+
+  a.navbar-brand {
+    text-indent: -9999px;
+    background: url(../images/logo.png) left center no-repeat;
+    background-position: 15px;
+    width: 130px;
+    padding: 35px 15px;
+  }
+
+  .navbar-toggle {
+    border: 0;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 10px 20px;
+
+    span.icon-bar {
+      width: 4px;
+      height: 4px;
+      margin: 3px auto;
+      border-radius: 3px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  ul.nav {
+    margin-bottom: -1px;
+    li {
+      &.active {
+        a {
+          background-color: white;
+          border-bottom: 1px solid $text-color;
+
+          &:hover, &:focus {
+            background-color: white;
+            border-bottom: 1px solid $text-color;
+          }
+        }
+      }
+      a {
+        color: $ioszen-text-color;
+        padding: 25px 15px;
+
+        &:hover, &:focus {
+          border-bottom: 1px solid #aaa;
+        }
+      }
+    }
+  }
+}
