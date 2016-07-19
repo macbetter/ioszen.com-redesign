@@ -3,6 +3,11 @@
 ---
 @charset "utf-8";
 
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "bootstrap";
+
+/*----------- variables -----------*/
+@link-color: #5F93E7;
+@text-color: #505A78;
+
+@import "header";
