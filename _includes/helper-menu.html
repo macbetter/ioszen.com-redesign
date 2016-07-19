@@ -1,23 +1,23 @@
 <ul>
-  <li>
+  <li {% if page.help_menu_active == "tinycal-osx" %}class="active"{% endif %}>
     <a href="{{ "/help/tinycal-osx/" | prepend: site.baseurl }}">
       <h3>小历 － 小而美的日历（OS X）</h3>
       <p>小巧的菜单栏日历应用，于系统日历完美结合，带有农历显示</p>
     </a>
   </li>
-  <li>
+  <li {% if page.help_menu_active == "tinycal-ios" %}class="active"{% endif %}>
     <a href="{{ "/help/tinycal-ios/" | prepend: site.baseurl }}">
       <h3>小历 － 通知中心日历（iOS）</h3>
       <p>App Store 首页精品推荐优秀应用</p>
     </a>
   </li>
-  <li>
+  <li {% if page.help_menu_active == "pin-osx" %}class="active"{% endif %}>
     <a href="{{ "/help/pin-osx/" | prepend: site.baseurl }}">
       <h3>Pin - 剪贴板扩展（OS X）</h3>
       <p>剪贴板扩展工具，轻巧的体积下蕴含了便捷的体验</p>
     </a>
   </li>
-  <li>
+  <li {% if page.help_menu_active == "pin-ios" %}class="active"{% endif %}>
     <a href="{{ "/help/pin-ios/" | prepend: site.baseurl }}">
       <h3>Pin - 剪贴板扩展（iOS）</h3>
       <p>App Store 首页精品推荐优秀应用</p>
