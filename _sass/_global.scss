@@ -1,5 +1,13 @@
 body {
   color: $ioszen-text-color;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1;
 }
 
 a {
