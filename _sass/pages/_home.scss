@@ -1,0 +1,70 @@
+#page-home {
+
+  .app {
+    padding: 50px 0;
+  }
+
+  .app-icon {
+    .icon {
+      height: 80px;
+    }
+    .name {
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+
+  .slogon {
+    text-align: center;
+    h1 {
+      font-size: 36px;
+      font-weight: normal;
+    }
+  }
+
+  .features {
+    // background: red;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .btn-download {
+    height: 40px;
+    text-indent: -9999px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .btn-app-store-mac {
+    height: 40px;
+    text-indent: -9999px;
+    background: url(../images/btn-app-store-mac.png) center center no-repeat;
+  }
+
+  .btn-app-store {
+    background: url(../images/btn-app-store.png) center center no-repeat;
+  }
+
+  .screenshot {
+    text-align: center;
+  }
+
+  .tinycal {
+
+    border-bottom: 1px solid #e7e7e7;
+
+    .app-icon {
+      .icon {
+        background: url(../images/tinycal.png) center center no-repeat;
+      }
+    }
+  }
+
+  .pin {
+    .app-icon {
+      .icon {
+        background: url(../images/pin.png) center center no-repeat;
+      }
+    }
+  }
+}
