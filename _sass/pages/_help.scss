@@ -1,0 +1,32 @@
+.page-help {
+  ul.help-menu {
+    margin: 20px 0 0 0;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      border-left: 3px solid white;
+      padding-left: 10px;
+      margin-bottom: 20px;
+
+      &.active {
+      border-left-color: $ioszen-link-color;
+      }
+
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+
+        h3 {
+          font-size: 18px;
+          margin-top: 0;
+        }
+        p {
+          margin: 0;
+          color: lighten($ioszen-text-color, 30%);
+        }
+      }
+    }
+  }
+}
