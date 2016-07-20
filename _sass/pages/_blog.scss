@@ -1,0 +1,46 @@
+.page-blog {
+  max-width: 800px;
+  margin-top: -20px;
+
+  ul.post-list {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      border-bottom: 1px solid #e7e7e7;
+      padding-top: 10px;
+      padding-bottom: 40px;
+
+      h2 {
+        font-size: 26px;
+      }
+
+      .post-category {
+        float: left;
+      }
+
+      .post-date {
+        float: left;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .page-blog {
+    ul.post-list {
+      li {
+        padding: 40px 0;
+        h2 { margin-top: 0;}
+        .post-category {
+          float: right;
+          margin-bottom: 10px;
+        }
+        .post-date {
+          float: right;
+        }
+      }
+    }
+  }
+}

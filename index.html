@@ -1,23 +1,86 @@
 ---
 layout: default
+active: home
 ---
 
-<div class="home">
+<div class="page page-home">
+  <div class="app tinycal">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
 
-  <h1 class="page-heading">Posts</h1>
+          <div class="app-icon">
+            <div class="icon"></div>
+            <div class="name">小&nbsp;&nbsp;历</div>
+          </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <div class="slogon"><h1>一个「小而美的日历」的应用</h1></div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+          <div class="features">
+            <ul>
+              <li>农历公历，节日节气和法定节假日</li>
+              <li>显示系统日历和提醒事项</li>
+              <li>节假日消息推送</li>
+              <li>……</li>
+          </div>
+        </div>
+      </div><!-- row -->
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <div class="row">
+        <div class="col-md-6">
+          <a href="https://itunes.apple.com/cn/app/xiao-li-xiao-er-mei-de-ri-li/id1114272557?l=en&mt=12" target="_blank" class="btn-download btn-app-store-mac"></a>
+          <div class="screenshot"><img src="{{"/assets/images/tinycal-osx.png" | prepend: site.baseurl }}" title="tinycal osx" alt="tinycal osx"></div>
+        </div>
+        <div class="col-md-6">
+          <a href="https://itunes.apple.com/cn/app/xiao-li-zui-mei-tong-zhi-zhong/id1031088612?l=en&mt=8" target="_blank" class="btn-download btn-app-store">
+            <img class="qr-small" src="{{ "/assets/images/qr-small.png" | prepend: site.baseurl }}">
+            <img class="qr-big" src="{{ "/assets/images/qr-tinycal-ios.png" | prepend: site.baseurl }}">
+          </a>
+          <div class="screenshot"><img src="{{"/assets/images/tinycal-ios.png" | prepend: site.baseurl }}" title="tinycal ios" alt="tinycal ios"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="app pin">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="app-icon">
+            <div class="icon"></div>
+            <div class="name">Pin</div>
+          </div>
+
+          <div class="slogon"><h1>把剪贴板玩出花样</h1></div>
+
+          <div class="features">
+            <ul>
+              <li>剪贴板保存 &#38; 检索</li>
+              <li>iCloud 数据同步、推送</li>
+              <li>丰富的动作扩展</li>
+              <li>……</li>
+          </div>
+        </div>
+      </div><!-- row -->
+
+      <div class="row">
+        <div class="col-md-6">
+          <a href="https://itunes.apple.com/cn/app/pin-jian-tie-ban-kuo-zhan/id1092997957?l=en&mt=12" target="_blank" class="btn-download btn-app-store-mac"></a>
+          <div class="screenshot"><img src="{{"/assets/images/pin-osx.png" | prepend: site.baseurl }}" title="pin osx" alt="pin osx"></div>
+        </div>
+        <div class="col-md-6">
+          <a href="https://itunes.apple.com/cn/app/pin-clipboard-extension/id1039643846?l=en&mt=8"
+             target="_blank"
+             class="btn-download btn-app-store">
+
+            <img class="qr-small" src="{{ "/assets/images/qr-small.png" | prepend: site.baseurl }}">
+            <img class="qr-big" src="{{ "/assets/images/qr-pin-ios.png" | prepend: site.baseurl }}">
+          </a>
+          <div class="screenshot"><img src="{{"/assets/images/tinycal-ios.png" | prepend: site.baseurl }}" title="tinycal ios" alt="tinycal ios"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>

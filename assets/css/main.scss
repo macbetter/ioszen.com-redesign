@@ -1,0 +1,24 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "bootstrap";
+
+/*----------- variables -----------*/
+$ioszen-link-color: #5F93E7;
+$ioszen-text-color: #505A78;
+
+@import "global";
+@import "header";
+@import "footer";
+
+@import "pages/home";
+@import "pages/blog";
+@import "pages/help";
+@import "pages/contact";
+
+@import "pages/blog-single";
+
+@import "syntax-hightlighting";
