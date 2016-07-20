@@ -4,17 +4,25 @@ title: 博客
 permalink: /blog/
 active: blog
 ---
-<div class="page page-blog" class="container">
-  <h1 class="page-heading">Posts</h1>
-  <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
+
+<div class="page page-blog container">
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%Y-%m-%-d" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="post-category">{{ post.categories }}</div>
+            <div class="post-date">{{ post.date | date: "%Y-%m-%-d" }}</div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="col-sm-9">
+            <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+            <div class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>'}}</div>
+          </div>
+        </div>
+
       </li>
     {% endfor %}
   </ul>
