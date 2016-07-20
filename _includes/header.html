@@ -15,16 +15,16 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li {% if page.active == 'home' %}class="active"{% endif %}>
-          <a href="{{ "/" | prepend: site.baseurl }}">首页</a>
+          <a href="{{ '/' | prepend: site.baseurl }}">首页</a>
         </li>
-        <li {% if page.active == 'blog' %}class="active"{% endif %}>
-          <a href="{{ "/blog/" | prepend: site.baseurl }}">博客</a>
+        <li {% if page.active == 'blog' or page.layout == 'post' %}class="active"{% endif %}>
+          <a href="{{ '/blog/' | prepend: site.baseurl }}">博客</a>
         </li>
-        <li {% if page.active == 'help' %}class="active"{% endif %}>
-          <a href="{{ "/help/" | prepend: site.baseurl }}">帮助</a>
+        <li {% if page.active == "help" %}class="active"{% endif %}>
+          <a href="{{ '/help/' | prepend: site.baseurl }}">帮助</a>
         </li>
         <li {% if page.active == 'contact' %}class="active"{% endif %}>
-          <a href="{{ "/contact/" | prepend: site.baseurl }}">联系方式</a>
+          <a href="{{ '/contact/' | prepend: site.baseurl }}">联系方式</a>
         </li>
         <!--
         <li class="dropdown">
