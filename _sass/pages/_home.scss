@@ -31,17 +31,17 @@
   .btn-download {
     height: 40px;
     text-indent: -9999px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin: 50px auto 20px auto;
+    display: block;
   }
 
   .btn-app-store-mac {
-    height: 40px;
-    text-indent: -9999px;
+    width: 165px;
     background: url(../images/btn-app-store-mac.png) center center no-repeat;
   }
 
   .btn-app-store {
+    width: 135px;
     background: url(../images/btn-app-store.png) center center no-repeat;
   }
 
