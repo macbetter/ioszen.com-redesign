@@ -33,6 +33,7 @@
     text-indent: -9999px;
     margin: 50px auto 20px auto;
     display: block;
+    position: relative;
   }
 
   .btn-app-store-mac {
@@ -43,6 +44,29 @@
   .btn-app-store {
     width: 135px;
     background: url(../images/btn-app-store.png) center center no-repeat;
+
+    &:hover {
+      img.qr-small { opacity: 0; }
+      img.qr-big { display: block; }
+    }
+
+    img.qr-small {
+      display: block;
+      height: 30px; width: 35px;
+      position: absolute;
+      right: -35px;
+      padding-left: 5px;
+      top: 5px;
+    }
+
+    img.qr-big {
+      display: none;
+      top: -140px;
+      left: 0px;
+      position: absolute;
+      height: 135px; width: 135px;
+      box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+    }
   }
 
   .screenshot {
