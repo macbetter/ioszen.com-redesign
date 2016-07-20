@@ -14,7 +14,7 @@ ioszen.com Redesign Project is a Jekyll-powered website, hosted on Github Pages.
 
 1. Fork this repository
 2. Change repository name to what you want
-3. Switch to `gh-pages` branch, Open `_config.yml` file, change `baseurl` to your new repository name
+3. Switch to `gh-pages` branch, Open `_config.yml` file, change `baseurl` to `/your-new-repository-name`
 4. Visit `https://your-username.github.io/your-new-repository-name`
 
 ## Configuration
