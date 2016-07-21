@@ -14,6 +14,10 @@ body {
   flex-direction: column;
 }
 
+.container {
+  min-width: 250px;
+}
+
 .page {
   flex: 1;
 }
