@@ -7,6 +7,7 @@
 
 # Site settings
 title: ios Zen
+description: "Talk about iOS Tech & News"
 
 ############################################################################
 # baseurl: the subpath of your site, e.g. /blog
