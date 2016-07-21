@@ -18,15 +18,17 @@
     text-align: center;
     h1 {
       font-size: 36px;
-      font-weight: normal;
+      font-weight: 300;
     }
   }
 
   .features {
     // background: red;
-    width: 300px;
+    max-width: 300px;
     margin: 0 auto;
   }
+
+  .app.pin .features { max-width: 200px; }
 
   .btn-download {
     height: 40px;
