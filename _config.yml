@@ -16,7 +16,7 @@ description: "Talk about iOS Tech & News"
 # url: the base hostname & protocol for your site
 #    [ custom domain | username.github.io | blank ]
 ############################################################################
-baseurl: ""
+baseurl: "/ioszen.com-redesign"
 url: ""
 
 
