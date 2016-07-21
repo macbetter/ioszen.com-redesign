@@ -25,4 +25,4 @@ Open `_config.yml` file, change `ga_tracking_id` to your Tracking ID
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the MIT license.
+Code licensed under the [MIT license](Code licensed under the MIT license).
