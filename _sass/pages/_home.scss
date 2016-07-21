@@ -44,27 +44,29 @@
 
   .btn-app-store-mac {
     width: 165px;
-    background: url(../images/btn-app-store-mac.png) center center no-repeat;
+    @include retina('../images/btn-mac-app-store.png', 3, 165px 40px, left center no-repeat);
+    // background: url(../images/btn-app-store-mac.png) center center no-repeat;
   }
 
   .btn-app-store {
     position: relative;
     right: -17.5px;
     width: 170px;
-    background: url(../images/btn-app-store.png) left center no-repeat;
+    @include retina('../images/btn-app-store.png', 3, 135px 40px, left center no-repeat);
+    // background: url(../images/btn-app-store.png) left center no-repeat;
 
     &:hover {
-      img.qr-small {
+        div.qr-small-wrapper {
          opacity: 0;
          right: 35px;
        }
     }
 
-    img.qr-small {
-      display: block;
+    div.qr-small-wrapper {
+      @include retina('../images/qr-small.png', 3, 30 30px, left center no-repeat);
       height: 30px; width: 35px;
       position: absolute;
-      right: 0;
+      right: -5px;
       padding-left: 5px;
       top: 5px;
       opacity: 1;
@@ -76,10 +78,10 @@
   }
 
   .qr-big-wrapper {
-    // background: red;
     text-align: center;
     position: absolute;
     left: 0; right: 0;
+    height: 135px;
     top: 0;
     opacity: 0;
 
@@ -98,7 +100,9 @@
     padding-top: 20px;
     background-color: white;
 
-    &.ios {
+    img { max-width: 100%; }
+
+    &.screenshot-ios {
       position: relative;
     }
   }
@@ -109,16 +113,26 @@
 
     .app-icon {
       .icon {
-        background: url(../images/tinycal.png) center center no-repeat;
+        @include retina('../images/app-icon-tinycal.png', 3, 80px 80px, center center no-repeat);
+        // background: url(../images/app-icon-tinycal.png) center center no-repeat;
       }
+    }
+
+    .qr-big-wrapper {
+      @include retina('../images/qr-app-tinycal-ios.png', 3, 135px 135px, center top no-repeat);
     }
   }
 
   .pin {
     .app-icon {
       .icon {
-        background: url(../images/pin.png) center center no-repeat;
+        @include retina('../images/app-icon-pin.png', 3, 80px 80px, center center no-repeat);
+        // background: url(../images/app-icon-pin.png) center center no-repeat;
       }
+    }
+
+    .qr-big-wrapper {
+      @include retina('../images/qr-app-pin-ios.png', 3, 135px 135px, center top no-repeat);
     }
   }
 }
