@@ -7,7 +7,7 @@ nav.navbar {
   a.navbar-brand {
     text-indent: -9999px;
     // background: url(../images/logo.png) left center no-repeat;
-    @include retina('../images/logo.png', 3, auto, left center no-repeat);
+    @include retina('../images/logo.png', 3, 100px 29px, center center no-repeat);
     background-position: 15px;
     width: 130px;
     padding: 35px 15px;
