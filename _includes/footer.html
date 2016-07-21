@@ -21,3 +21,15 @@
   ga('send', 'pageview');
 </script>
 {% endif %}
+
+{% if page.active == 'home' %}
+<script>
+  $('a.btn-app-store').each(function() {
+    $(this).mouseover(function() {
+      $(this).parent().find('.qr-big-wrapper').addClass('show-qr');
+    }).mouseout(function() {
+      $(this).parent().find('.qr-big-wrapper').removeClass('show-qr');
+    });
+  });
+</script>
+{% endif %}

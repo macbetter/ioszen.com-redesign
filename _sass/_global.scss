@@ -1,4 +1,12 @@
+body,input,textarea,select,button {
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  -moz-font-feature-settings:'liga', 'kern'
+}
+
 body {
+  font-family: 'PingHei', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', 'Microsoft Yahei', sans-serif;
   color: $ioszen-text-color;
 
   display: flex;
