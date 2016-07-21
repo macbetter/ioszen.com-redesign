@@ -9,6 +9,10 @@
 <script src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/retina.min.js" | prepend: site.baseurl }}"></script>
+<script>
+retinajs( document.querySelectorAll('img') );
+</script>
 
 {% if site.ga_tracking_id != "" %}
 <script>
