@@ -63,7 +63,7 @@
     }
 
     div.qr-small-wrapper {
-      @include retina('../images/qr-small.png', 3, 30 30px, left center no-repeat);
+      @include retina('../images/qr-small.png', 3, 30px 30px, left center no-repeat);
       height: 30px; width: 35px;
       position: absolute;
       right: -5px;
